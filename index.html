@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>TP3 PELICULAS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous">
+</head>
+
+<link rel="stylesheet" href="ilum.css">
+<body>
+ 
+
+
+
+  <div class="card mb-3 fondo">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="foto.jpg" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <div class="centrar">
+          <h1 class="titulo centrar">BUSCADOR DE PELICULAS</h1>
+        </div>
+
+          
+    <form>
+      <div class="form-group">
+        <label class="labels" for="nombre">Nombre:</label>
+        <input type="text" class="form-control" id="nombre" placeholder="Escriba el nombre de la película">
+      </div>
+
+      <div class="form-group">
+        <label class="labels" for="opcion">Tipo:</label>
+        <select class="form-control" id="opcion">
+          <option value="">- Seleccione -</option>
+          <option value="movie">Película</option>
+          <option value="series">Serie</option>
+          <option value="Episodio">Episodio</option>
+        </select>
+      </div>
+
+
+
+      <label for="temporada">Temporada:</label>
+      <input type="text" id="temporada" name="temporada"><br>
+
+      <label for="episodio">Episodio:</label>
+      <input type="text" id="episodio" name="episodio"><br>
+
+
+      <div class="form-group">
+        <label class="labels" for="año">Año:</label>
+        <input type="text" class="form-control" id="año" placeholder="Escriba el año">
+      </div>
+
+      <div class="centrar">
+      <button type="submit"  class="btn btn-danger boton centrar" onclick="buscarPelicula()">BUSCAR</button>
+    </div>
+    </form>
+
+        
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+    
+
+  
+
+
+    <table class="table table table-dark table-striped">
+      <thead class="">
+        <tr>
+          <th>Título</th>
+          <th>Año</th>
+          <th>Tipo</th>
+          <th>Actores</th>
+          <th>Director</th>
+          <th>Argumento</th>
+        </tr>
+      </thead>
+      <tbody id="results">
+      </tbody>
+    </table>
+  </div>
+
+
+
+
+
+    <script src="Style.js"></script>
+</body>
+</html>
